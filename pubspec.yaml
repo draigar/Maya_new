@@ -1,0 +1,50 @@
+name: maya_by_myai_robotics
+description: "MAYA by MYai Robotics."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.2.3 <4.0.0'
+
+dependencies:
+  animated_text_kit: ^4.2.2
+  dio: ^5.4.0
+  flutter:
+    sdk: flutter
+  flutter_svg: ^2.0.9
+  flutter_swiper_view: ^1.1.8
+  http: ^1.2.0
+  window_manager: ^0.3.7
+  provider: ^5.0.0
+  intl: ^0.17.0
+  # connectivity_widget: ^1.0.0
+  top_snackbar_flutter: ^3.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  json_serializable: ^6.7.1
+
+flutter:
+  uses-material-design: true
+  assets:
+   - assets/svgs/
+   - assets/img/google.png
+   - assets/img/microsoft.png
+   - assets/img/apple.png
+   - assets/img/logoFull.png
+   - assets/img/logoText.png
+  # fonts:
+  #   - family: IndieFlower
+  #     fonts: 
+  #       - asset: assets/fonts/IndieFlower-Regular.ttf
+
+desktop:
+  macos:
+    bundle_id: com.myai.maya
+    plugin_config:
+      darwin:
+        icon: ./installer/dmg/icon.icns
+  windows:
+    # icon: windows/runner/your_icon.ico
